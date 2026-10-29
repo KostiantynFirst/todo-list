@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+  <div class="card border-0 shadow-sm mx-auto" style="max-width: 640px;">
+    <div class="card-body p-4">
+      <h3 class="card-title mb-4">
+        {% if object %}Update task{% else %}New task{% endif %}
+      </h3>
+      <form method="post">
+        {% csrf_token %}
+        {{ form|crispy }}
+        <div class="d-flex gap-2 mt-3">
+          <button type="submit" class="btn btn-primary rounded-pill px-4">
+            {% if object %}Save changes{% else %}Create{% endif %}
+          </button>
+          <a href="{% url 'todo:index' %}" class="btn btn-outline-secondary rounded-pill px-4">Cancel</a>
+        </div>
+      </form>
+    </div>
+  </div>
+{% endblock %}

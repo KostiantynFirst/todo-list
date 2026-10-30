@@ -1,0 +1,174 @@
+[
+  {
+    "model": "todo.tag",
+    "pk": 1,
+    "fields": {
+      "name": "home"
+    }
+  },
+  {
+    "model": "todo.tag",
+    "pk": 2,
+    "fields": {
+      "name": "shopping"
+    }
+  },
+  {
+    "model": "todo.tag",
+    "pk": 3,
+    "fields": {
+      "name": "study"
+    }
+  },
+  {
+    "model": "todo.tag",
+    "pk": 4,
+    "fields": {
+      "name": "django"
+    }
+  },
+  {
+    "model": "todo.tag",
+    "pk": 5,
+    "fields": {
+      "name": "work"
+    }
+  },
+  {
+    "model": "todo.tag",
+    "pk": 6,
+    "fields": {
+      "name": "health"
+    }
+  },
+  {
+    "model": "todo.tag",
+    "pk": 7,
+    "fields": {
+      "name": "finance"
+    }
+  },
+  {
+    "model": "todo.task",
+    "pk": 1,
+    "fields": {
+      "content": "Prepare for the Django ORM tech check",
+      "created_at": "2026-10-27T09:15:00Z",
+      "deadline": "2026-10-31T18:00:00Z",
+      "is_done": false,
+      "tags": [
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "model": "todo.task",
+    "pk": 2,
+    "fields": {
+      "content": "Buy milk, bread and coffee beans",
+      "created_at": "2026-10-28T08:30:00Z",
+      "deadline": null,
+      "is_done": false,
+      "tags": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "todo.task",
+    "pk": 3,
+    "fields": {
+      "content": "Finish the todo list project and open a pull request",
+      "created_at": "2026-10-28T19:40:00Z",
+      "deadline": "2026-10-30T20:00:00Z",
+      "is_done": false,
+      "tags": [
+        3,
+        4,
+        5
+      ]
+    }
+  },
+  {
+    "model": "todo.task",
+    "pk": 4,
+    "fields": {
+      "content": "Pay the internet bill",
+      "created_at": "2026-10-25T12:00:00Z",
+      "deadline": "2026-11-01T12:00:00Z",
+      "is_done": false,
+      "tags": [
+        1,
+        7
+      ]
+    }
+  },
+  {
+    "model": "todo.task",
+    "pk": 5,
+    "fields": {
+      "content": "Go for a 5 km morning run",
+      "created_at": "2026-10-26T06:10:00Z",
+      "deadline": null,
+      "is_done": false,
+      "tags": [
+        6
+      ]
+    }
+  },
+  {
+    "model": "todo.task",
+    "pk": 6,
+    "fields": {
+      "content": "Read the chapter about select_related and prefetch_related",
+      "created_at": "2026-10-24T17:45:00Z",
+      "deadline": "2026-10-26T21:00:00Z",
+      "is_done": true,
+      "tags": [
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "model": "todo.task",
+    "pk": 7,
+    "fields": {
+      "content": "Fix the kitchen tap",
+      "created_at": "2026-10-20T10:00:00Z",
+      "deadline": null,
+      "is_done": true,
+      "tags": [
+        1
+      ]
+    }
+  },
+  {
+    "model": "todo.task",
+    "pk": 8,
+    "fields": {
+      "content": "Update CV with the first portfolio project",
+      "created_at": "2026-10-22T14:20:00Z",
+      "deadline": "2026-10-25T18:00:00Z",
+      "is_done": true,
+      "tags": [
+        5
+      ]
+    }
+  },
+  {
+    "model": "todo.task",
+    "pk": 9,
+    "fields": {
+      "content": "Book a dentist appointment",
+      "created_at": "2026-10-23T09:00:00Z",
+      "deadline": null,
+      "is_done": true,
+      "tags": [
+        6
+      ]
+    }
+  }
+]

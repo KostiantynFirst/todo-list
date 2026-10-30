@@ -72,26 +72,33 @@ A task can have many tags, and a tag can belong to many tasks.
    ```bash
    pip install -r requirements.txt
    ```
+   
+4. Create a `.env` file based on `.env.sample` and set your own `SECRET_KEY`:
 
-4. Apply the migrations:
+   ```bash
+   copy .env.sample .env        # Windows
+   cp .env.sample .env          # macOS / Linux
+   ```
+
+5. Apply the migrations:
 
    ```bash
    python manage.py migrate
    ```
 
-5. Load the test data (optional):
+6. Load the test data (optional):
 
    ```bash
    python manage.py loaddata todo_data
    ```
 
-6. Create a superuser to use the admin panel (optional):
+7. Create a superuser to use the admin panel (optional):
 
    ```bash
    python manage.py createsuperuser
    ```
 
-7. Start the development server:
+8. Start the development server:
 
    ```bash
    python manage.py runserver
